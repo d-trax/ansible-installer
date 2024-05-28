@@ -17,11 +17,12 @@
       - "php7.4-*"
       - "php8.0-*"
       - "php8.1-*"
+      - "php8.2-*"
   ignore_errors: true
 
 - name: Set PHP Version
   set_fact:
-    php_version: 8.2
+    php_version: 8.3
 
 - name: "Install PHP {{ php_version }}"
   apt:
